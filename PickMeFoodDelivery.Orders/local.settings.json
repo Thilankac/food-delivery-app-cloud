@@ -1,0 +1,9 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "COSMOSDB": "AccountEndpoint=https://shipdbaccount.documents.azure.com:443/;AccountKey=q3hqty8bmZmkQnaagEVX0mYKewdiz3u7bv3DfqzIYfElK5QWEyvKP2xgasaa0E03KMACCdOv95J6ACDb6k0uNg==",
+    "PickMeOrderQueue": "Endpoint=sb://pickmefoodbus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=DATceuxjEZKsH0/45VPbgGpHm+Fs+2xg10d4eKp9iCI="
+  }
+}
