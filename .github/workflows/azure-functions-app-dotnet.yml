@@ -51,7 +51,7 @@ jobs:
       run: dotnet restore
 
     - name: Build
-        dotnet build --configuration Release --output ./output
+      run: dotnet build --configuration Release --output ./output
 
     - name: 'Run Azure Functions Action'
       uses: Azure/functions-action@v1
