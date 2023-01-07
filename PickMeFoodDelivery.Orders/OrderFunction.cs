@@ -13,6 +13,7 @@ using System.Threading;
 
 namespace PickMeFoodDelivery.Orders
 {
+    // comment
     public static class OrderFunction
     {
         private const string DbName = "PickMeFoodDeliveryDB";
