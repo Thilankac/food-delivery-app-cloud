@@ -15,7 +15,7 @@ jobs:
       ARM_CLIENT_SECRET: YTf8Q~WVDdrwAC.cSOw0.gzNFYRyD9z41blo3cqQ
       ARM_SUBSCRIPTION_ID: 9c6826f6-65ef-4589-88d8-04f14fb817f6
       ARM_TENANT_ID: ac0a69a2-768f-4911-a4df-084228f34268
-      AZURE_FUNCTIONAPP_NAME: 'functionapp1234000'   # set this to your function app name on Azure
+      AZURE_FUNCTIONAPP_NAME: 'functionapp20230108'   # set this to your function app name on Azure
       AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'       # set this to the path to your function app project, defaults to the repository root
       DOTNET_VERSION: '6.0'                   # set this to the dotnet version to use (e.g. '2.1.x', '3.1.x', '5.0.x')
 
