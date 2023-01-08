@@ -50,8 +50,8 @@ resource "azurerm_resource_group" "app_grp"{
   location=local.location
 }
 
-resource "azurerm_storage_account" "functionstore_089889_001" {
-  name                     = "functionstore_089889_001"
+resource "azurerm_storage_account" "functionstore_230108" {
+  name                     = "functionstore_230108"
   resource_group_name      = azurerm_resource_group.app_grp.name
   location                 = azurerm_resource_group.app_grp.location
   account_tier             = "Standard"
