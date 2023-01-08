@@ -9,6 +9,7 @@ on:
 jobs:
   terraform:
     name: 'Terraform'
+    # credincials
     env:
       ARM_CLIENT_ID: d888505f-909b-4d90-83e5-4b70bc193836
       ARM_CLIENT_SECRET: YTf8Q~WVDdrwAC.cSOw0.gzNFYRyD9z41blo3cqQ
