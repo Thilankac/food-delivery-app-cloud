@@ -20,7 +20,7 @@ name: Deploy food-delivery-app-2023010801
 
 on:
   workflow_run:
-    workflows: ["Terraform"]
+    workflows: ["Terraform Apply"]
     types:
       - completed
 

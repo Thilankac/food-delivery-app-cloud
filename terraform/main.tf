@@ -1,20 +1,34 @@
-terraform {
-  backend "azurerm" {
-    resource_group_name  = "tamopstfstates"
-    storage_account_name = "tfstatedevops"
-    container_name       = "terraformgithubexample"
-    key                  = "terraformgithubexample.tfstate"
-  }
-}
-
 provider "azurerm" {
   features {}
 }
 
-data "azurerm_client_config" "current" {}
+resource "azurerm_resource_group" "default" {
+  name     = "container-registry-rg"
+  location = "East US 2"
 
-#Create Resource Group
-resource "azurerm_resource_group" "tamops" {
-  name     = "tamops"
-  location = "eastus2"
+  tags = {
+    environment = "Production"
+  }
+}
+
+resource "azurerm_container_registry" "acr" {
+  name                = "kspcontainerregistry"
+  resource_group_name = azurerm_resource_group.default.name
+  location            = "East US 2"
+  sku                 = "Standard"
+  admin_enabled       = true
+}
+
+output "acr_login_server" {
+  value = azurerm_container_registry.acr.login_server
+}
+
+output "acr_admin_username" {
+  value     = azurerm_container_registry.acr.admin_username
+  sensitive = true
+}
+
+output "acr_admin_password" {
+  value     = azurerm_container_registry.acr.admin_password
+  sensitive = true
 }
