@@ -19,9 +19,10 @@
 name: Deploy food-delivery-app-2023010801
 
 on:
-  push:
-    branches:
-    - master
+  workflow_run:
+    workflows: ["Terraform"]
+    types:
+      - completed
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'food-delivery-app-20230108'   # set this to your function app name on Azure
