@@ -3,14 +3,17 @@ name: 'Terraform'
 on:
   push:
     branches:
-    - master
+    - main
   pull_request:
  
 jobs:
   terraform:
     name: 'Terraform'
     env:
-        creds: ${{ secrets.AZURE_CREDENTIALS }} # set up AZURE_CREDENTIALS secrets in your repository
+      ARM_CLIENT_ID: "d888505f-909b-4d90-83e5-4b70bc193836"
+      ARM_CLIENT_SECRET: "YTf8Q~WVDdrwAC.cSOw0.gzNFYRyD9z41blo3cqQ"
+      ARM_SUBSCRIPTION_ID: "9c6826f6-65ef-4589-88d8-04f14fb817f6"
+      ARM_TENANT_ID: "ac0a69a2-768f-4911-a4df-084228f34268"
 
     runs-on: ubuntu-latest
     environment: production
