@@ -74,8 +74,8 @@ resource "azurerm_function_app" "functionapp20230108" {
   location                   = azurerm_resource_group.app_grp.location
   resource_group_name        = azurerm_resource_group.app_grp.name
   app_service_plan_id        = azurerm_app_service_plan.function_app_plan.id
-  storage_account_name       = azurerm_storage_account.functionapp20230108.name
-  storage_account_access_key = azurerm_storage_account.functionapp20230108.primary_access_key
+  storage_account_name       = azurerm_storage_account.functionstore_089889_001.name
+  storage_account_access_key = azurerm_storage_account.functionstore_089889_001.primary_access_key
   site_config {
     dotnet_framework_version = "v6.0"
   }
