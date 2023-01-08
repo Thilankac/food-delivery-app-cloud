@@ -50,8 +50,8 @@ resource "azurerm_resource_group" "app_grp"{
   location=local.location
 }
 
-resource "azurerm_storage_account" "functionstore_230108" {
-  name                     = "functionstore_230108"
+resource "azurerm_storage_account" "functionstore230108" {
+  name                     = "functionstore230108"
   resource_group_name      = azurerm_resource_group.app_grp.name
   location                 = azurerm_resource_group.app_grp.location
   account_tier             = "Standard"
@@ -74,8 +74,8 @@ resource "azurerm_function_app" "functionapp20230108" {
   location                   = azurerm_resource_group.app_grp.location
   resource_group_name        = azurerm_resource_group.app_grp.name
   app_service_plan_id        = azurerm_app_service_plan.function_app_plan.id
-  storage_account_name       = azurerm_storage_account.functionstore_230108.name
-  storage_account_access_key = azurerm_storage_account.functionstore_230108.primary_access_key
+  storage_account_name       = azurerm_storage_account.functionstore230108.name
+  storage_account_access_key = azurerm_storage_account.functionstore230108.primary_access_key
   site_config {
     dotnet_framework_version = "v6.0"
   }
