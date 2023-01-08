@@ -50,8 +50,8 @@ resource "azurerm_resource_group" "app_grp"{
   location=local.location
 }
 
-resource "azurerm_storage_account" "functionstore_089889" {
-  name                     = "functionstore089889"
+resource "azurerm_storage_account" "functionstore_089889_001" {
+  name                     = "functionstore_089889_001"
   resource_group_name      = azurerm_resource_group.app_grp.name
   location                 = azurerm_resource_group.app_grp.location
   account_tier             = "Standard"
@@ -69,8 +69,8 @@ resource "azurerm_app_service_plan" "function_app_plan" {
   }
 }
 
-resource "azurerm_function_app" "functionapp_1234000" {
-  name                       = "functionapp1234000"
+resource "azurerm_function_app" "functionapp20230108" {
+  name                       = "functionapp20230108"
   location                   = azurerm_resource_group.app_grp.location
   resource_group_name        = azurerm_resource_group.app_grp.name
   app_service_plan_id        = azurerm_app_service_plan.function_app_plan.id
