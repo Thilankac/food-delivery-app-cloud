@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-01-08T06:19:32.289Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="eZhZQ8sABtpFuwITTFT2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-01-08T06:21:18.375Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" version="20.8.3" etag="4XjF_Z_La4wXPKIXusdR" type="github">
   <diagram id="Db9RHmdtPAt26-Z1-oMQ" name="serverless-web-app">
-    <mxGraphModel dx="677" dy="970" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="351" dy="799" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -377,9 +377,6 @@
         <mxCell id="JCDnAdbY1yPkoRfCkcH7-178" value="" style="sketch=0;aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/mscae/ResourceGroup.svg;strokeColor=#2c1111;" vertex="1" parent="1">
           <mxGeometry x="1460" y="50" width="50" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="JCDnAdbY1yPkoRfCkcH7-180" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=1 2;endArrow=none;endFill=0;" edge="1" parent="1" source="JCDnAdbY1yPkoRfCkcH7-86" target="JCDnAdbY1yPkoRfCkcH7-162">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="JCDnAdbY1yPkoRfCkcH7-184" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="JCDnAdbY1yPkoRfCkcH7-79" target="JCDnAdbY1yPkoRfCkcH7-164">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -388,9 +385,6 @@
         </mxCell>
         <mxCell id="JCDnAdbY1yPkoRfCkcH7-192" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn0.iconfinder.com/data/icons/social-network-9/50/29-128.png;strokeColor=#2c1111;" vertex="1" parent="1">
           <mxGeometry x="2240" y="90" width="45.5" height="45.5" as="geometry" />
-        </mxCell>
-        <mxCell id="JCDnAdbY1yPkoRfCkcH7-193" value="Deployment Architecture Diagram&amp;nbsp;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=25;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="1532" y="540" width="499.5" height="30" as="geometry" />
         </mxCell>
         <mxCell id="JCDnAdbY1yPkoRfCkcH7-194" value="&lt;span style=&quot;font-family: &amp;quot;Segoe UI&amp;quot;; font-size: 15.52px; background-color: rgb(251, 251, 251);&quot;&gt;Azure Active Directory&lt;/span&gt;" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/identity/Azure_Active_Directory.svg;strokeColor=#2c1111;" vertex="1" parent="1">
           <mxGeometry x="1400" y="424" width="50.31" height="46" as="geometry" />
@@ -408,6 +402,9 @@
         </mxCell>
         <mxCell id="JCDnAdbY1yPkoRfCkcH7-209" value="User" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="1297.5" y="333" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="JCDnAdbY1yPkoRfCkcH7-210" value="Pul Request" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="2155" y="415" width="90" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
