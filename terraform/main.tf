@@ -9,6 +9,7 @@ locals {
   location="North Europe"
 }
 
+terraform import azurerm_resource_group.app_grp /subscriptions/9c6826f6-65ef-4589-88d8-04f14fb817f6/resourceGroups/app-grp
 
 resource "azurerm_resource_group" "app_grp"{
   name=local.resource_group
