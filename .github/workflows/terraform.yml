@@ -31,6 +31,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
  
+ 
+    - name: Import Azure Resource
+      run: |
+        terraform init
+        terraform import azurerm_resource_group app_grp
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
@@ -52,6 +57,7 @@ jobs:
         tf_actions_version: 0.14.8
         tf_actions_subcommand: 'destroy'
         tf_actions_working_dir: "./terraform"
+      
          
     - name: 'Terraform Plan'
       uses: hashicorp/terraform-github-actions@master
