@@ -31,6 +31,10 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Import Azure Resource
+      run: |
+        terraform init
+        terraform import /subscriptions/9c6826f6-65ef-4589-88d8-04f14fb817f6/resourceGroups/app-grp
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
