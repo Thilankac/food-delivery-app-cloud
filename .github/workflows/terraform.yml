@@ -34,7 +34,7 @@ jobs:
     - name: Import Azure Resource
       run: |
         terraform init
-        terraform import azurerm_resource_group.group azurerm_resource_group.app_grp.name
+        terraform import app-grp 
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
