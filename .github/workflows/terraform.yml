@@ -30,11 +30,6 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v2
-
-    - name: Import Azure Resource
-      run: |
-        terraform init
-        terraform import app-grp 
          
     - name: 'Terraform Init'
       uses: hashicorp/terraform-github-actions@master
